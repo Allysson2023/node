@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Allysson2023/node#readme",
   "dependencies": {
+    "consign": "^0.1.6",
     "express": "^5.1.0"
   }
 }
