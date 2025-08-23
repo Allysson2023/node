@@ -10,15 +10,24 @@ module.exports = app=>{
 
     app.get('/users', (req, res)=>{
 
-        res.statusCode = 200;
-        res.setHeader('content-Type', 'application/json');
-        res.json({
-            users:[{
-                name:'Hcode',
-                email:'contato@hcode.com',
-                id:1
-            }]
+        db.find({}).sort({name:1}).exec((err, users)=>{
+
+            if(err){
+                console.log('err: ${err}');
+                res.status(400).json({
+                    error:err
+                });
+                
+            }else{
+                res.statusCode = 200;
+                res.setHeader('content-Type', 'application/json');
+                res.json({
+                        users
+                });
+            };
+
         });
+
     });
 
     app.post('/users', (req, res)=>{
