@@ -16,4 +16,10 @@
 
 * Para sub o servidor digite -> nodemon index, quando voce salva qualquer codigo no seu projeto ele vai reniciar o projeto sozinho  
 
+* Consign cmd -> npm install consigin --save  
 
+* body-parser cmd -> npm install body-parser --save  
+
+* Banco de Dados do JavaScript cmd -> npm install nedb --save  
+
+* Validando cmd -> npm install express-validator --save  
