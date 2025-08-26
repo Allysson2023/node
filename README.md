@@ -18,8 +18,12 @@
 
 * Consign cmd -> npm install consigin --save  
 
+<<<<<<< HEAD
+
 * body-parser cmd -> npm install body-parser --save  
 
 * Banco de Dados do JavaScript cmd -> npm install nedb --save  
 
 * Validando cmd -> npm install express-validator --save  
+
+
