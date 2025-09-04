@@ -75,8 +75,8 @@ module.exports = app=>{
     routeId.put(
         
         [
-            body('name').notEmpty().withMessage('o nome é obrigatorio'),
-            body('email').isEmail().withMessage('O e-mail está inválido')
+            body('_name').notEmpty().withMessage('o nome é obrigatorio'),
+            body('_email').isEmail().withMessage('O e-mail está inválido')
 
         ],
 
